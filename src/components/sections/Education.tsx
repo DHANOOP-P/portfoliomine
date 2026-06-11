@@ -72,7 +72,7 @@ const EducationCard: React.FC<{ index: number } & TEducation> = ({
 }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.4, 0.75)}
-    className="bg-black-200 xs:w-[320px] w-full rounded-3xl p-8 flex flex-col gap-4"
+    className="bg-black-200 xs:w-[320px] border border-white/30 w-full rounded-3xl p-8 flex flex-col gap-4"
   >
     {/* Icon + Score badge */}
     <div className="flex items-center justify-between">
@@ -126,7 +126,7 @@ const Education = () => {
         {/* Career Objective block lives in the coloured band */}
         <motion.div
           variants={fadeIn("up", "spring", 0.2, 0.9)}
-          className="mt-8 mb-6 max-w-3xl max-w-[100%] rounded-2xl border border-white/10 bg-black-200/60 p-7 backdrop-blur-sm"
+          className="mt-8 md:mb-6 mb-14  max-w-3xl max-w-[100%] rounded-2xl border border-white/10 bg-black-200/60 p-7 backdrop-blur-sm"
         >
           <p className="mb-3 text-[12px] uppercase tracking-[0.2em] text-[#915EFF]">
             Career Objective
@@ -139,10 +139,12 @@ const Education = () => {
 
       {/* Cards row — same -mt-20 overlap trick as Feedbacks */}
       <div
-        className={`${styles.paddingX} -mt-20 flex flex-wrap gap-7 pb-14 max-sm:justify-center`}
+        className={`${styles.paddingX} -mt-20 flex flex-wrap  gap-7 pb-14 max-sm:justify-center`}
       >
+        
         {educationList.map((edu, index) => (
-          <EducationCard key={edu.institution} index={index} {...edu} />
+            
+          <EducationCard  key={edu.institution} index={index}  {...edu} />
         ))}
       </div>
     </div>

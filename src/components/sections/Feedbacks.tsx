@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../../constants/styles";
 import { fadeIn } from "../../utils/motion";
-import { testimonials } from "../../constants";
+// import { testimonials } from "../../constants";
 import { Header } from "../atoms/Header";
 import { TTestimonial } from "../../types";
 import { config } from "../../constants/config";
@@ -55,9 +55,9 @@ const Feedbacks = () => {
       <div
         className={`${styles.paddingX} -mt-20 flex flex-wrap gap-7 pb-14 max-sm:justify-center`}
       >
-        {testimonials.map((testimonial, index) => (
+        {/* {testimonials.map((testimonial, index) => (
           <FeedbackCard key={testimonial.name} index={index} {...testimonial} />
-        ))}
+        ))} */}
       </div>
     </div>
   );
