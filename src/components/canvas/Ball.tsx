@@ -13,10 +13,6 @@ import CanvasLoader from "../layout/Loader";
 const Ball = (props: any) => {
   const [decal] = useTexture([props.imgUrl]);
 
-  // Mobile GPUs often render decal textures upside down / mirrored
-  // without this. Setting it explicitly avoids relying on defaults.
-  decal.flipY = false;
-
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
@@ -47,19 +43,7 @@ const BallCanvas: React.FC<{ icon: string }> = ({ icon }) => {
     <Canvas
       frameloop="demand"
       dpr={[1, 2]}
-      gl={{
-        preserveDrawingBuffer: true,
-        // 'low-power' avoids hitting the discrete-GPU / context budget
-        // some Android browsers enforce for multiple <canvas> elements
-        powerPreference: "low-power",
-        antialias: true,
-        alpha: true,
-      }}
-      // helps avoid a blank canvas on some mobile WebGL drivers
-      // that fail silently on the very first context creation
-      onCreated={({ gl }) => {
-        gl.setClearAlpha(0);
-      }}
+      gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls enablePan={false} enableZoom={false} />

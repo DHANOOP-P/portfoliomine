@@ -71,18 +71,18 @@ const services: TService[] = [
 
 const technologies: TTechnology[] = [
  
-  {
-    name: "TypeScript",
-    icon: "typescript.png",
-  },
+  // {
+  //   name: "TypeScript",
+  //   icon: "typescript.png",
+  // },
   {
     name: "React JS",
     icon: "reactjs.png",
   },
-  {
-    name: "Redux Toolkit",
-    icon: "redux.png",
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: "redux.png",
+  // },
   {
     name: "Tailwind CSS",
     icon: "tailwind.png",
@@ -116,10 +116,10 @@ const technologies: TTechnology[] = [
     name: "figma",
     icon: "figma.png",
   },
-  {
-    name: "docker",
-    icon: "docker.png",
-  },
+  // {
+  //   name: "docker",
+  //   icon: "docker.png",
+  // },
 ];
 
 const experiences: TExperience[] = [
