@@ -70,18 +70,7 @@ const services: TService[] = [
 ];
 
 const technologies: TTechnology[] = [
-  {
-    name: "HTML 5",
-    icon: "html.png",
-  },
-  {
-    name: "CSS 3",
-    icon: "css.png",
-  },
-  {
-    name: "JavaScript",
-    icon: "javascript.png",
-  },
+ 
   {
     name: "TypeScript",
     icon: "typescript.png",
@@ -97,6 +86,18 @@ const technologies: TTechnology[] = [
   {
     name: "Tailwind CSS",
     icon: "tailwind.png",
+  },
+   {
+    name: "HTML 5",
+    icon: "html.png",
+  },
+  {
+    name: "CSS 3",
+    icon: "css.png",
+  },
+  {
+    name: "JavaScript",
+    icon: "javascript.png",
   },
   {
     name: "Node JS",
