@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../../constants/styles";
 import { fadeIn, textVariant } from "../../utils/motion";
 import { Header } from "../atoms/Header";
+import { SectionWrapper } from "../../hoc"
 import { config } from "../../constants/config";
 
 // ─── Types ────────────────────────────────────────────────────────────────────
@@ -217,4 +218,4 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default SectionWrapper(Skills,"skills");

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import { SectionWrapper } from "../../hoc";
 import { styles } from "../../constants/styles";
 import { fadeIn, textVariant } from "../../utils/motion";
 import { Header } from "../atoms/Header";
@@ -151,4 +151,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default SectionWrapper(Education, "education");

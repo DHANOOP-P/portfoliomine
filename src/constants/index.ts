@@ -48,6 +48,18 @@ export const navLinks: TNavLink[] = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "experience",
+    title: "Experience",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "skills",
+    title: "Skills",
+  },
 ];
 
 const services: TService[] = [
@@ -161,7 +173,7 @@ const experiences: TExperience[] = [
     companyName: "",
     icon: creator,
     iconBg: "#383E56",
-    date: "May 2022 - curr",
+    date: "May 2026 - current",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
